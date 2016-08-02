@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F92A02541D0C8D7C00089D59 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92A02531D0C8D7C00089D59 /* Player.swift */; };
+		F92A025A1D0E83C700089D59 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92A02591D0E83C700089D59 /* SourceSansPro-Regular.ttf */; };
 		F993D3B21D0A66CB0077ADAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993D3B11D0A66CB0077ADAF /* AppDelegate.swift */; };
 		F993D3B41D0A66CB0077ADAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993D3B31D0A66CB0077ADAF /* ViewController.swift */; };
 		F993D3B71D0A66CB0077ADAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F993D3B51D0A66CB0077ADAF /* Main.storyboard */; };
 		F993D3BA1D0A66CB0077ADAF /* FarkleSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F993D3B81D0A66CB0077ADAF /* FarkleSwift.xcdatamodeld */; };
 		F993D3BC1D0A66CB0077ADAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F993D3BB1D0A66CB0077ADAF /* Assets.xcassets */; };
 		F993D3BF1D0A66CB0077ADAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F993D3BD1D0A66CB0077ADAF /* LaunchScreen.storyboard */; };
+		F993D3C71D0A684D0077ADAF /* DieLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F993D3C61D0A684D0077ADAF /* DieLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F92A02531D0C8D7C00089D59 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		F92A02591D0E83C700089D59 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
 		F993D3AE1D0A66CB0077ADAF /* FarkleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarkleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F993D3B11D0A66CB0077ADAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F993D3B31D0A66CB0077ADAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		F993D3BB1D0A66CB0077ADAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F993D3BE1D0A66CB0077ADAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F993D3C01D0A66CB0077ADAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F993D3C61D0A684D0077ADAF /* DieLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DieLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				F993D3B11D0A66CB0077ADAF /* AppDelegate.swift */,
+				F993D3C61D0A684D0077ADAF /* DieLabel.swift */,
+				F92A02531D0C8D7C00089D59 /* Player.swift */,
 				F993D3B31D0A66CB0077ADAF /* ViewController.swift */,
 				F993D3B51D0A66CB0077ADAF /* Main.storyboard */,
 				F993D3BB1D0A66CB0077ADAF /* Assets.xcassets */,
 				F993D3BD1D0A66CB0077ADAF /* LaunchScreen.storyboard */,
 				F993D3C01D0A66CB0077ADAF /* Info.plist */,
 				F993D3B81D0A66CB0077ADAF /* FarkleSwift.xcdatamodeld */,
+				F92A02591D0E83C700089D59 /* SourceSansPro-Regular.ttf */,
 			);
 			path = FarkleSwift;
 			sourceTree = "<group>";
@@ -125,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F92A025A1D0E83C700089D59 /* SourceSansPro-Regular.ttf in Resources */,
 				F993D3BF1D0A66CB0077ADAF /* LaunchScreen.storyboard in Resources */,
 				F993D3BC1D0A66CB0077ADAF /* Assets.xcassets in Resources */,
 				F993D3B71D0A66CB0077ADAF /* Main.storyboard in Resources */,
@@ -141,6 +151,8 @@
 				F993D3B41D0A66CB0077ADAF /* ViewController.swift in Sources */,
 				F993D3B21D0A66CB0077ADAF /* AppDelegate.swift in Sources */,
 				F993D3BA1D0A66CB0077ADAF /* FarkleSwift.xcdatamodeld in Sources */,
+				F92A02541D0C8D7C00089D59 /* Player.swift in Sources */,
+				F993D3C71D0A684D0077ADAF /* DieLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +304,7 @@
 				F993D3C51D0A66CB0077ADAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

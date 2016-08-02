@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+            <string>SourceSansPro-Regular</string>
+            <string>SourceSansPro-Regular</string>
+            <string>SourceSansPro-Regular</string>
+            <string>SourceSansPro-Regular</string>
+            <string>SourceSansPro-Regular</string>
+            <string>SourceSansPro-Regular</string>
+            <string>SourceSansPro-Regular</string>
+            <string>SourceSansPro-Regular</string>
+            <string>SourceSansPro-Regular</string>
+            <string>SourceSansPro-Regular</string>
+            <string>SourceSansPro-Regular</string>
+            <string>SourceSansPro-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FarkleSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +34,210 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" misplaced="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Djx-2O-cYl">
+                                <rect key="frame" x="220" y="140" width="192" height="324"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="CUv-9q-iCJ">
+                                        <rect key="frame" x="1" y="0.0" width="191" height="68"/>
+                                        <subviews>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚀" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QX5-iS-i77" customClass="DieLabel" customModule="FarkleSwift" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="68" height="68"/>
+                                                <color key="backgroundColor" red="0.12941176470588237" green="0.18431372549019609" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="68" id="6G0-Wg-xIF"/>
+                                                    <constraint firstAttribute="width" constant="68" id="chW-Lz-wNq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="54"/>
+                                                <color key="textColor" red="0.87450980392156863" green="0.20392156862745098" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1K-ic-OuO" customClass="DieLabel" customModule="FarkleSwift" customModuleProvider="target">
+                                                <rect key="frame" x="123" y="0.0" width="68" height="68"/>
+                                                <color key="backgroundColor" red="0.12941176470588237" green="0.18431372549019609" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="68" id="bgn-F8-tDZ"/>
+                                                    <constraint firstAttribute="height" constant="68" id="t7d-oj-b43"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="54"/>
+                                                <color key="textColor" red="0.87450980392156863" green="0.20392156862745098" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="1SH-cV-XP2">
+                                        <rect key="frame" x="1" y="128" width="191" height="68"/>
+                                        <subviews>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚃" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ng2-5r-ipn" customClass="DieLabel" customModule="FarkleSwift" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="68" height="68"/>
+                                                <color key="backgroundColor" red="0.12941176470588237" green="0.18431372549019609" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="68" id="J1Q-pZ-Y2C"/>
+                                                    <constraint firstAttribute="width" constant="68" id="gAx-rv-GnF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="54"/>
+                                                <color key="textColor" red="0.87450980392156863" green="0.20392156862745098" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚄" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHJ-nv-Hai" customClass="DieLabel" customModule="FarkleSwift" customModuleProvider="target">
+                                                <rect key="frame" x="123" y="0.0" width="68" height="68"/>
+                                                <color key="backgroundColor" red="0.12941176470588237" green="0.18431372549019609" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="68" id="Gpf-yl-Wle"/>
+                                                    <constraint firstAttribute="width" constant="68" id="sA6-NX-eCF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="54"/>
+                                                <color key="textColor" red="0.87450980392156863" green="0.20392156862745098" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="rAr-R0-dqI">
+                                        <rect key="frame" x="0.0" y="256" width="192" height="68"/>
+                                        <subviews>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚅" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bML-pS-Ee7" customClass="DieLabel" customModule="FarkleSwift" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="68" height="68"/>
+                                                <color key="backgroundColor" red="0.12941176470588237" green="0.18431372549019609" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="68" id="Q5a-f3-uVc"/>
+                                                    <constraint firstAttribute="width" constant="68" id="gbd-Ic-vYZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="54"/>
+                                                <color key="textColor" red="0.87450980392156863" green="0.20392156862745098" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚂" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZb-jn-pK2" customClass="DieLabel" customModule="FarkleSwift" customModuleProvider="target">
+                                                <rect key="frame" x="124" y="0.0" width="68" height="68"/>
+                                                <color key="backgroundColor" red="0.12941176470588237" green="0.18431372549019609" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="68" id="G1o-qT-Lhh"/>
+                                                    <constraint firstAttribute="width" constant="68" id="ncw-4I-3IG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="54"/>
+                                                <color key="textColor" red="0.87450980392156863" green="0.20392156862745098" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRN-fU-OjJ">
+                                <rect key="frame" x="262" y="472" width="128" height="23"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="28"/>
+                                <state key="normal" title="roll.">
+                                    <color key="titleColor" red="0.90196078431372551" green="0.92156862745098034" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onRollPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3xR-Zn-dhX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="score for turn: 0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsf-Ct-dQq">
+                                <rect key="frame" x="220" y="102" width="154" height="21"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
+                                <color key="textColor" red="0.88627450980392153" green="0.90588235294117647" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="player one: 0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgF-JC-BDZ">
+                                <rect key="frame" x="20" y="20" width="197" height="36"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="22"/>
+                                <color key="textColor" red="0.90588235294117647" green="0.92549019607843142" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="player two: 0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaB-K9-jFo">
+                                <rect key="frame" x="415" y="19" width="165" height="36"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="22"/>
+                                <color key="textColor" red="0.89411764705882357" green="0.9137254901960784" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="farkle." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RI-rn-ZhG">
+                                <rect key="frame" x="0.0" y="549" width="187" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="rUj-iJ-hdR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="63"/>
+                                <color key="textColor" red="0.13333333333333333" green="0.41960784313725491" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="current player." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NR-eY-drX">
+                                <rect key="frame" x="220" y="73" width="110" height="21"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
+                                <color key="textColor" red="0.90196078431372551" green="0.92156862745098034" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVi-rg-rd8">
+                                <rect key="frame" x="234" y="503" width="165" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="Toe-5W-h46"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="28"/>
+                                <state key="normal" title="collect points.">
+                                    <color key="titleColor" red="0.89803921568627454" green="0.91764705882352937" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onCollectPointsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rmN-dy-83B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33333333333333331" green="0.62352941176470589" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3RI-rn-ZhG" secondAttribute="bottom" id="6aw-nO-Sfh"/>
+                            <constraint firstItem="bVi-rg-rd8" firstAttribute="top" secondItem="RRN-fU-OjJ" secondAttribute="bottom" id="9vi-fK-yDT"/>
+                            <constraint firstItem="bVi-rg-rd8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9xz-bu-KFd"/>
+                            <constraint firstItem="bVi-rg-rd8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="16.5" id="Ai0-H9-row"/>
+                            <constraint firstItem="RRN-fU-OjJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="16" id="Hvn-ii-brk"/>
+                            <constraint firstItem="lsf-Ct-dQq" firstAttribute="leading" secondItem="Djx-2O-cYl" secondAttribute="leading" id="MAg-T5-SfW"/>
+                            <constraint firstItem="5NR-eY-drX" firstAttribute="leading" secondItem="lsf-Ct-dQq" secondAttribute="leading" id="OWQ-cQ-Auc"/>
+                            <constraint firstItem="3RI-rn-ZhG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OqT-nd-bDA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bVi-rg-rd8" secondAttribute="bottom" constant="8" id="RgB-kK-wul"/>
+                            <constraint firstItem="RRN-fU-OjJ" firstAttribute="leading" secondItem="Djx-2O-cYl" secondAttribute="leading" id="UzC-Ah-KEL"/>
+                            <constraint firstItem="3RI-rn-ZhG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="YhS-Fj-wlm"/>
+                            <constraint firstItem="Djx-2O-cYl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Z2q-Gq-N8m"/>
+                            <constraint firstItem="Djx-2O-cYl" firstAttribute="top" secondItem="lsf-Ct-dQq" secondAttribute="bottom" constant="8" id="ZhV-gP-0UK"/>
+                            <constraint firstItem="lsf-Ct-dQq" firstAttribute="top" secondItem="5NR-eY-drX" secondAttribute="bottom" constant="1" id="bgP-31-aPL"/>
+                            <constraint firstItem="bVi-rg-rd8" firstAttribute="top" secondItem="RRN-fU-OjJ" secondAttribute="bottom" constant="8" id="gOQ-5G-CNK"/>
+                            <constraint firstItem="BaB-K9-jFo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jam-M5-5NH"/>
+                            <constraint firstAttribute="trailing" secondItem="bVi-rg-rd8" secondAttribute="trailing" constant="20" id="lXR-sp-K05"/>
+                            <constraint firstItem="bVi-rg-rd8" firstAttribute="leading" secondItem="RRN-fU-OjJ" secondAttribute="leading" id="lxg-tw-EAZ"/>
+                            <constraint firstItem="RRN-fU-OjJ" firstAttribute="trailing" secondItem="Djx-2O-cYl" secondAttribute="trailing" id="oWj-JP-RU1"/>
+                            <constraint firstItem="RRN-fU-OjJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q9a-zR-XoA"/>
+                            <constraint firstItem="bVi-rg-rd8" firstAttribute="trailing" secondItem="RRN-fU-OjJ" secondAttribute="trailing" id="sca-F5-Qd2"/>
+                            <constraint firstItem="Djx-2O-cYl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sl7-pb-5Ta"/>
+                            <constraint firstItem="BaB-K9-jFo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="tRk-Z1-K1v"/>
+                            <constraint firstItem="RRN-fU-OjJ" firstAttribute="top" secondItem="Djx-2O-cYl" secondAttribute="bottom" constant="2" id="vBg-y5-7p4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3RI-rn-ZhG" secondAttribute="bottom" id="vR0-Ll-tB8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Hvn-ii-brk"/>
+                                <exclude reference="UzC-Ah-KEL"/>
+                                <exclude reference="oWj-JP-RU1"/>
+                                <exclude reference="YhS-Fj-wlm"/>
+                                <exclude reference="9vi-fK-yDT"/>
+                                <exclude reference="Ai0-H9-row"/>
+                                <exclude reference="lXR-sp-K05"/>
+                                <exclude reference="lxg-tw-EAZ"/>
+                                <exclude reference="sca-F5-Qd2"/>
+                                <exclude reference="RgB-kK-wul"/>
+                                <exclude reference="vR0-Ll-tB8"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="currentPlayerLabel" destination="5NR-eY-drX" id="xAo-xF-3rQ"/>
+                        <outlet property="player1ScoreLabel" destination="tgF-JC-BDZ" id="zpC-AV-qvh"/>
+                        <outlet property="player2ScoreLabel" destination="BaB-K9-jFo" id="nn4-OY-r0w"/>
+                        <outlet property="potentialScoreLabel" destination="lsf-Ct-dQq" id="Q2b-DJ-Rvb"/>
+                        <outletCollection property="dice" destination="QX5-iS-i77" collectionClass="NSMutableArray" id="7qo-LQ-qEu"/>
+                        <outletCollection property="dice" destination="U1K-ic-OuO" collectionClass="NSMutableArray" id="mfr-bM-6Mj"/>
+                        <outletCollection property="dice" destination="Ng2-5r-ipn" collectionClass="NSMutableArray" id="MtG-8c-Ziq"/>
+                        <outletCollection property="dice" destination="mHJ-nv-Hai" collectionClass="NSMutableArray" id="add-2W-GIx"/>
+                        <outletCollection property="dice" destination="QZb-jn-pK2" collectionClass="NSMutableArray" id="GLn-lG-dBM"/>
+                        <outletCollection property="dice" destination="bML-pS-Ee7" collectionClass="NSMutableArray" id="yEl-X7-r5a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="225" y="413"/>
         </scene>
     </scenes>
 </document>
